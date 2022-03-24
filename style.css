@@ -182,7 +182,7 @@ h2 {
 
 .pack {
     width: calc(100% / 6.5);
-    min-width: 13rem;
+    min-width: 15rem;
     height: fit-content;
     margin-bottom: 0.63rem;
     border: 0.18rem solid var(--grey);
@@ -193,7 +193,7 @@ h2 {
 
 .bg-pack {
     width: calc(100% / 6.5);
-    min-width: 13rem;
+    min-width: 15rem;
     height: fit-content;
     margin-bottom: 0.63rem;
     background-color: var(--blue);
@@ -239,10 +239,6 @@ h2 {
 
     #subscribe {
         min-height: 10rem;
-    }
-
-    #contact {
-        align-items: start;
     }
 
     .mobile-slide {
