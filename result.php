@@ -13,46 +13,60 @@
 </head>
 <body>
 
-<nav class="navbar">
-    <img src="assets/logo.jpg" alt="Logo" class="navbar-brand logo" />
-</nav>
+    <nav class="navbar">
+        <img src="assets/logo.jpg" alt="Logo" class="navbar-brand logo" />
+    </nav>
 
-<section id="result">
+    <section id="result">
+        <div class="content result">
 
-    <div class="content">
+            <img src="assets/cake.jpg" class="img-result" alt="Message">
 
-        <img src="assets/cake.jpg" class="img-result" alt="Message">
+            <div class="message">
+                <?php
+                    $errors = [];
+                    if(isset($_POST['submit'])) {
 
-        <div class="message">
+                        if (empty($_POST['name']) || empty($_POST['email']) || empty($_POST['message'])) {
+                            $errors = "Tous les champs sont requis !";
+                        }
+                        if (!$errors) {
+                            $name = htmlspecialchars(($_POST['name']));
+                            $email = htmlspecialchars(($_POST['email']));
+                            $message = htmlspecialchars(($_POST['message']));
+                        }
 
-            <?php
+                    }
+                ?>
 
-            $name = trim($_POST['name']);
-            $email = trim($_POST['email']);
-            $message = trim($_POST['message']);
+                <div class="my-5">
+                    <a href="index.php"><i class="fas fa-backward"></i> Retour au site</a>
+                </div>
 
-            ?>
+                <?php
+                    if ($errors){
+                    echo    '<div class="text-message alert alert-dismissible alert-danger mt-3">
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                <strong>'. $errors . '</strong>
+                            </div>';
+                    };
 
-            <p>(<?= $email; ?>)</p>
+                    if (isset($email)){
+                        echo '<p>('. trim($email) .')</p>';
+                    };
 
-            <h5>Bonjour</h5><p><?= $name; ?></p>
+                    if (isset($name)){
+                        echo '<h5 class="text-danger"> Bonjour ' . trim($name) . '</h5>';
+                    };
 
-            <p>Nous vous remercions pour votre message.</p>
-
-            <div>
-
-                <?= $message; ?>
-
+                    if (isset($message)){
+                        echo '<div class="text-message text-danger"><p>Nous vous remercions pour votre message : </p>'. '<div>'. trim($message) .'</div></div>';
+                    };
+                ?>
             </div>
 
-            <p></p>
-
         </div>
-
-    </div>
-
-</section>
-
+    </section>
 
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

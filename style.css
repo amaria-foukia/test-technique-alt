@@ -15,7 +15,13 @@
 }
 
 section{
-    margin: 0 0 50px 0;
+    margin-bottom: 5.5rem;
+}
+
+a{
+    color: var(--brown) !important;
+    text-decoration: none !important;
+    margin-top: 2rem !important;
 }
 
 ul {
@@ -30,28 +36,17 @@ p {
     color: var(--grey);
 }
 
-.navbar-brand {
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-.logo {
-    width: 119px;
-    height: 70px;
-    margin: 0;
-    object-fit: contain;
-}
-
 h2 {
     color: var(--brown);
 }
 
 #contact {
+    margin-bottom: 2rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    height: 500px;
+    height: 31rem;
     background-image: url("assets/banner.jpg");
     background-size: cover;
 }
@@ -64,7 +59,7 @@ h2 {
 }
 
 #result {
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 #slider, #details {
@@ -72,17 +67,29 @@ h2 {
 }
 
 #subscribe {
+    margin-bottom: 1rem;
     background-color: var(--blue);
     min-height: 13rem;
-    border: 3px solid var(--primary);
+    border: 0.18rem solid var(--primary);
+}
+
+.navbar-brand {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.logo {
+    width: 7.44rem;
+    height: 4.38rem;
+    margin: 0;
+    object-fit: contain;
 }
 
 .welcome {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    margin-top: 0;
+    padding: 0.62rem;
     background-color: var(--grey);
     border-radius: 1%;
     color: white;
@@ -91,7 +98,7 @@ h2 {
 
 .contact-form {
     background-color: white;
-    padding: 30px;
+    padding: 1.25rem;
     border-radius: 1%;
 }
 
@@ -104,52 +111,62 @@ h2 {
 
 .content  {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+}
+
+.result {
+    justify-content: space-around;
 }
 
 .btn-primary{
     background: var(--primary) !important;
-    border: 1px solid var(--primary) !important;
+    border: 0.06rem solid var(--primary) !important;
     border-radius: 0 !important;
 }
 
 .btn-secondary{
     background: var(--secondary) !important;
-    border: 3px solid var(--primary) !important;
+    border: 0.18rem solid var(--primary) !important;
     color: var(--grey) !important;
     border-radius: 0 !important;
 }
 
 .btn-danger{
     background: var(--danger) !important;
-    border: 3px solid var(--blue) !important;
+    border: 0.18rem solid var(--blue) !important;
     color: white !important;
     border-radius: 0 !important;
 }
 
 .icon-lg{
-    width: 75px;
-    height: 75px;
+    width: 4.7rem;
+    height: 4.7rem;
 }
 
 .icon {
-    width: 55px;
-    height: 55px;
+    width: 3.2rem;
+    height: 3.2rem;
 }
 
-.tab {
+.icon-email{
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.bg-part {
     display: flex;
     flex-direction: column;
     justify-content: start;
     width: calc(100% / 4);
     min-width: 20rem;
     min-height: 20rem;
-    padding: 30px 0 0 20px;
+    padding: 1.8rem 0 0 1.25rem;
     background-color: var(--blue);
 }
 
-.tab-choice{
+.tab-choice {
     min-width: 15rem;
     text-align: right;
 }
@@ -162,11 +179,23 @@ h2 {
 
 .pack {
     width: calc(100% / 6.5);
-    min-width: 15rem;
+    min-width: 13rem;
     height: fit-content;
-    margin-bottom: 10px;
-    border: 3px solid var(--grey);
-    padding: 10px;
+    margin-bottom: 0.63rem;
+    border: 0.18rem solid var(--grey);
+    padding: 0.63rem;
+    text-align: left ;
+    cursor: pointer;
+}
+
+.bg-pack {
+    width: calc(100% / 6.5);
+    min-width: 13rem;
+    height: fit-content;
+    margin-bottom: 0.63rem;
+    background-color: var(--blue);
+    border: O.18rem solid var(--blue);
+    padding: 0.63rem;
     text-align: left ;
     cursor: pointer;
 }
@@ -175,58 +204,93 @@ h2 {
     border: none !important;
 }
 
-.special-pack {
-    width: calc(100% / 6.5);
-    min-width: 15rem;
-    height: fit-content;
-    margin-bottom: 10px;
-    background-color: var(--blue);
-    border: 3px solid var(--blue);
-    padding: 10px;
-    text-align: left ;
-    cursor: pointer;
+.mobile-slide {
+    display: none;
 }
-
-/*.slide {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    cursor: pointer;
-}*/
-
-
-/************** test slide **********************/
-
-.slideshow {
-    width: 350px;
-    height: 200px;
-    overflow: hidden;
-    border: 3px solid #F2F2F2;
-}
-
-.slideshow ul {
-    /* 4 images donc 4 x 100% */
-    width: 800%;
-    height: 200px;
-    padding:0; margin:0;
-    list-style: none;
-}
-.slideshow li {
-    float: left;
-}
-
-/************** fin slide **********************/
 
 .img-slide {
-    width: 350px;
-    height: 200px;
+    width: 13.4rem;
+    height: 12.5rem;
     object-fit: cover;
 }
 
 .img-result {
-    width: 400px;
-    height: 400px;
+    width: 25rem;
+    height: 31.5rem;
     object-fit: cover;
 }
 
+.text-message {
+    border: 0.125rem solid var(--grey);
+    min-width: 20rem;
+    padding: 2rem;
+}
 
+/***************************** small screens ****************************/
+
+@media (min-width: 280px) and (max-width: 818px) {
+
+    #presentation {
+        justify-content: center;
+    }
+
+    #subscribe {
+        min-height: 10rem;
+    }
+
+    #contact {
+        align-items: start;
+    }
+
+    .mobile-slide {
+        display: inline-table;
+    }
+
+    .slideshow {
+        width: 21.9rem;
+        height: 12.5rem;
+        overflow: hidden;
+        border: 0.18rem solid white;
+    }
+
+    .slideshow ul {
+        /* 8 images donc 8 x 100% */
+        width: 800%;
+        height: 12.5rem;
+        padding:0;
+        margin:0;
+        list-style: none;
+    }
+
+    .slideshow li {
+        float: left;
+    }
+
+    .slide {
+        display: none;
+    }
+
+    .img-slide {
+        width: 21.9rem;
+        height: 12.5rem;
+        object-fit: cover;
+    }
+
+    .part{
+        text-align: center;
+    }
+
+    .input-group input, button {
+        height: fit-content !important;
+        font-size: smaller !important;
+        margin: auto !important;
+    }
+
+    span.input-group-text {
+        display: none;
+    }
+
+    .company {
+        text-align: center;
+    }
+}
