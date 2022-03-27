@@ -66,7 +66,7 @@ h2 {
     flex-wrap: wrap;
 }
 
-#result {
+#result, p.result {
     margin-top: 1.25rem;
 }
 
@@ -233,6 +233,11 @@ h2 {
 
 @media (min-width: 280px) and (max-width: 818px) {
 
+    #contact {
+        background-image: url("assets/banner-mobile.jpg");
+        background-size: cover;
+    }
+
     #presentation {
         justify-content: center;
     }
@@ -270,7 +275,7 @@ h2 {
     }
 
     .img-slide {
-        width: 21.9rem;
+        width: 22rem;
         height: 12.5rem;
         object-fit: cover;
     }
@@ -292,4 +297,5 @@ h2 {
     .company {
         text-align: center;
     }
+
 }

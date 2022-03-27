@@ -205,7 +205,7 @@
             for ($i=0; $i<4; $i++) {
                 echo '        
             <div class="pack company">
-                <h6>Compagnie</h6>
+                <h5>Compagnie</h5>
                 <ul>
                     <li>Este ante</li>
                     <li>Porta none</li>

@@ -67,6 +67,10 @@
                         echo '<div class="text-message text-danger"><p>Nous vous remercions pour votre message : </p>'. '<div>'. trim($message) .'</div></div>';
                     };
                 ?>
+
+                <p class="result">
+                    Lorem ipsum dolor sit amet. Qui quod voluptas non omnis <br>dolores hic quos earum ut fugit omnis qui repudiandae rerum <br>hic beatae architecto et quidem consequuntur.
+                </p>
             </div>
 
         </div>
